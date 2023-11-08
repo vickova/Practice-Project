@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+/* body{
+    font-family: 'Montserrat', sans-serif;
+} */
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+nav ul li{
+    list-style: none;
+}
+.menu{
+    display: none;
+}
+nav button{
+    background-color: #3461FF;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding:.5rem 1rem;
+}
+.hero{
+    width: 80%;
+    /* height: 70vh; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.hero__image{
+    width: 40%;
+}
+.hero__image img{
+    width: 100%;
+    height: 100%;
+}
+.hero__text{
+    width: 40%;
+}
+.hero__text h2{
+    font-size: 4rem;
+}
+.hero__text p{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+.input{
+    margin: 1rem 0;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.input input{
+    height: 40px;
+    width: 60%;
+    border-radius: 50px;
+    padding: 0 1rem;
+    border: 1px solid grey;
+    outline: none;
+}
+.input button{
+    background-color: #3461FF;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding:.8rem 2rem;
+}
+.partners{
+    margin: 6rem 0;
+    background-color: #FAFAFA;
+}
+.partners-inner{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+.partners .partners-img{
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+}
+.partners-img{
+    display: flex;
+    gap: 1rem;
+    overflow: auto;
+}
+.partners h2{
+    text-align: center;
+    margin: 3rem 0;
+}
+.commitment{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.commitment h3, .commitment h2{
+    font-size: 3rem;
+    
+}
+.figures{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.commit-text button{
+    background-color: transparent;
+    border: none;
+    color: #3461FF;
+    padding: 0;
+}
+.commit-text p{
+    margin: 1rem 0;
+}
+.works{
+    width: 80%;
+    margin: 6rem auto;
+}
+.works h2, .works p{
+    text-align: center;
+}
+.works h2{
+    font-size: 3rem;
+}
+.products{
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 1rem;
+    margin: 3rem 0;
+}
+.prod-img{
+    text-align: center;
+}
+.prod-img img{
+    width: 100%;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+.button button{
+    background-color: #3461FF;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    padding:.8rem 2rem;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 3rem;
+}
+.terms{
+    display: flex;
+    gap: 2rem;
+}
+
+@media screen and (max-width:640px){
+    body{
+        margin:0 10px;
+    }
+    header{
+        width: 100%;
+        margin: 0;
+    }
+    nav{
+        justify-content: flex-end;
+    }
+    .menu{
+        display: block;
+    }
+    nav ul{
+        display: none;
+    }
+    .hero{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero__text, .hero__image{
+        width: 100%;
+    }
+    .hero__text{
+        margin: 2rem 0;
+    }
+    .hero__text h2{
+        font-size: 3rem;
+    }
+    .partners-img{
+        display: flex;
+    }
+    .commitment h2{
+        font-size: 2.5rem;
+        border-bottom: 4px solid #3461FF;
+    }
+    .products{
+        display: block;
+        width: 100%;
+    }
+    .prod-img{
+        margin: 2rem 0;
+        border: 1px solid #3461FF;
+        border-radius: 10px;
+        padding: 2rem 1rem;
+    }
+    footer{
+        flex-direction: column-reverse;
+        gap: 2rem;
+    }
+    footer p{
+        font-size: .8rem;
+    }
+    .commit-text{
+        margin: 2rem 0;
+    }
+    .commit-text h2{
+        font-size: 2rem;
+        width: fit-content;
+    }
+    .works h2{
+        font-size: 2rem;
+    }
+    .figures h3{
+        font-size: 2rem;
+    }
+    .input{
+        gap: 0;
+        justify-content: center;
+    }
+    .input input{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    .input button{
+        width: 50%;
+    }
+}
